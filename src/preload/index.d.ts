@@ -2,6 +2,17 @@ export {};
 
 declare global {
   interface Window {
-    electronAPI: Record<string, never>;
+    electronAPI: {
+      ingest: () => Promise<
+        | { canceled: true }
+        | {
+            canceled: false;
+            directory: string;
+            stdout: string;
+            stderr: string;
+            exitCode: number | null;
+          }
+      >;
+    };
   }
 }
