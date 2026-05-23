@@ -3,6 +3,7 @@ import { join } from "path";
 
 function createWindow(): void {
   const mainWindow = new BrowserWindow({
+    title: "Picture Book",
     width: 900,
     height: 670,
     webPreferences: {
