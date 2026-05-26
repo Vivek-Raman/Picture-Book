@@ -1,12 +1,12 @@
 {
 	"folders": [
 		{
-			"path": ".",
-		},
-		{
 			"name": "picture-book-cli",
 			"path": "cli"
-		}
+		},
+		{
+			"path": ".",
+		},
 	],
 	"settings": {}
 }
